@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
     <head>
@@ -7,44 +8,189 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href = "index.css" rel = "stylesheet">
         <script src = "index.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <title>Admin Dashboard</title>
     </head>
 
     <body>
-        <div class = "sidebar">
-
+        <div class = "Sidebar">
+            <div class = "SideContent">
+                <button class = "SideButton">
+                    <img height = "100%" src = "Images/view-dashboard.png"> 
+                    <span class = "SideButtonText" style = "font-size: 23px;">Dashboard</span>
+                </button>
+                <div class = "ButtonGroup1">
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/home.png"> 
+                        <span class = "SideButtonText">Home</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/Profile.png"> 
+                        <span class = "SideButtonText">Profile</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/message-reply.png"> 
+                        <span class = "SideButtonText">Messages</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/history.png"> 
+                        <span class = "SideButtonText">History</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/pages.png"> 
+                        <span class = "SideButtonText">Tasks</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/community.png"> 
+                        <span class = "SideButtonText">Communities</span>
+                    </button>
+                </div>
+                <div class = "ButtonGroup2">
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/settings.png"> 
+                        <span class = "SideButtonText">Settings</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/support.png"> 
+                        <span class = "SideButtonText">Support</span>
+                    </button>
+                    <button class = "SideButton">
+                        <img height = "50%" src = "Images/privacy.png"> 
+                        <span class = "SideButtonText">Privacy</span>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class = "content">
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-                        <span style = "font-size: 100px;">Water</span>
-            <br>
-                        <span style = "font-size: 100px;">Water</span>
-            <br>
-                        <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-            <span style = "font-size: 100px;">Water</span>
-            <br>
-                        <span style = "font-size: 100px;">Water</span>
-            <br>
+        <div class = "Main">
+            <div class = "TopContent">
+                <div class = "TopContentTop">
+                    <input class = "SearchFormButton" type = "submit" value = "">
+                    <input class = "SearchFormText" type = "text">
+                    <button class = "TopContentNotification"></button>
+                    <button class = "ProfileImage"></button>
+                    <span class = "ProfileName">Seth Brown </span>
+                </div>
+                <div class = "TopContentBottom">
+
+                    <button class = "ProfileImage2"></button>
+                    <div class = "ProfileWelcome">
+                        <span class = "ProfileWelcomeFont1">Hi there,</span>
+                        <span class = "ProfileWelcomeFont2">Seth Brown (@sethcero)</span>
+                    </div>
+                    <div class = "ProfileButtonRack">
+                        <button class = "PBRButton">New</button>
+                        <button class = "PBRButton">Upload</button>
+                        <button class = "PBRButton">Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "BottomContent">
+                <div class = "MyProjects">
+                    <div class = "ProjectsTitle">
+                        <span class = "ProjectTitleText">My Projects</span>
+                    </div>
+                    <div class = "ProjectSection">
+                        <div class = "ProjectItem">
+                            <span class = "ProjectTitle">My First Project</span>
+                            <span class = "ProjectDesc">Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi. Massa enim nec dui nunc. At imperdiet dui accumsan sit. Urna nec tincidunt praesent semper feugiat nibh sed.</span>
+                            <div class = "ProjectButtonGroup">
+                                <button style = "background-image: url('Images/Star.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/View.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/WebFork.svg');" class = "ProjectButton"></button>
+                            </div>
+                        </div>
+                        <div class = "ProjectItem">
+                            <span class = "ProjectTitle">Samsung Clone</span>
+                            <span class = "ProjectDesc">Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ullamcorper eget nulla facilisi etiam dignissim. Id donec ultrices tincidunt arcu non. Ornare lectus sit amet est placerat in egestas.</span>
+                            <div class = "ProjectButtonGroup">
+                                <button style = "background-image: url('Images/Star.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/View.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/WebFork.svg');" class = "ProjectButton"></button>
+                            </div>
+                        </div>
+                        <div class = "ProjectItem">
+                            <span class = "ProjectTitle">Freelance Design</span>
+                            <span class = "ProjectDesc">Interdum velit laoreet id donec ultrices tincidunt arcu non. Ut morbi tincidunt augue interdum. Facilisi cras fermentum odio eu feugiat. Auctor elit sed vulputate mi sit amet mauris commodo. Nisi vitae suscipit tellus mauris a diam.</span>
+                            <div class = "ProjectButtonGroup">
+                                <button style = "background-image: url('Images/Star.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/View.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/WebFork.svg');" class = "ProjectButton"></button>
+                            </div>
+                        </div>
+                        <div class = "ProjectItem">
+                            <span class = "ProjectTitle">Apple Clone</span>
+                            <span class = "ProjectDesc">Interdum velit laoreet id donec ultrices tincidunt arcu non. Ut morbi tincidunt augue interdum. Facilisi cras fermentum odio eu feugiat. Auctor elit sed vulputate mi sit amet mauris commodo. Nisi vitae suscipit tellus mauris a diam.                           </span>
+                            <div class = "ProjectButtonGroup">
+                                <button style = "background-image: url('Images/Star.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/View.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/WebFork.svg');" class = "ProjectButton"></button>
+                            </div>
+                        </div>
+                        <div class = "ProjectItem">
+                            <span class = "ProjectTitle">Freelance School Website</span>
+                            <span class = "ProjectDesc">Nisl rhoncus mattis rhoncus urna neque viverra justo. Vel quam elementum pulvinar etiam non quam. Urna nec tincidunt praesent semper. Id aliquet lectus proin nibh nisl. Vel pharetra vel turpis nunc. </span>
+                            <div class = "ProjectButtonGroup">
+                                <button style = "background-image: url('Images/Star.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/View.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/WebFork.svg');" class = "ProjectButton"></button>
+                            </div>
+                        </div>
+                        <div class = "ProjectItem">
+                            <span class = "ProjectTitle">Active Portfolio</span>
+                            <span class = "ProjectDesc">Morbi tincidunt augue interdum velit euismod in pellentesque massa. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Iaculis urna id volutpat lacus.</span>
+                            <div class = "ProjectButtonGroup">
+                                <button style = "background-image: url('Images/Star.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/View.svg');" class = "ProjectButton"></button>
+                                <button style = "background-image: url('Images/WebFork.svg');" class = "ProjectButton"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "ExtraContainer">
+                    <div class = "ProjectsTitle">
+                        <span class = "ProjectTitleText">Announcements</span>
+                    </div>
+                    <div class = "Announcements">
+                        <div class = "Announcetent">
+                            <span class = "AnnounceTitle">Site Maintenance</span>
+                            <span class = "AnnounceDesc">Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Auctor elit sed vulputate mi sit.</span>
+                        </div>
+                        <div class = "Announcetent">
+                            <span class = "AnnounceTitle">New Hosting Service</span>
+                            <span class = "AnnounceDesc">Id venenatis a condimentum vitae sapien. Quis enim lobortis scelerisque fermentum dui faucibus in.</span>
+                        </div>
+                        <div style = "border:none" class = "Announcetent">
+                            <span class = "AnnounceTitle">New Products</span>
+                            <span class = "AnnounceDesc">Lacinia quis vel eros donec ac odio tempor orci dapibus. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. </span>
+                        </div>
+                    </div>
+                    <div class = "ProjectsTitle">
+                        <span class = "ProjectTitleText">Trending</span>
+                    </div>
+                    <div class = "Trending">
+                        <div class = "Profile">
+                            <!--<img class = "ProfileIMG" src = "Images/ProfilePic.png">-->
+                            <div class = "ProfileText">
+
+                            </div>
+                        </div>
+                        <div class = "Profile">
+
+                        </div>
+                        <div class = "Profile">
+
+                        </div>
+                        <div class = "Profile">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 
 </html>
+
+<!--            
+
+            -->

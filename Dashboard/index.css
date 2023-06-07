@@ -1,15 +1,392 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* real CSS V */
+
 body{
-    margin:0;
     width: 100vw;
-    height:100vh;
+    min-height: 100vh;
     display: flex;
 }
 
-.sidebar{
+.Sidebar{
     flex:1;
-    background-color: rgb(0, 143, 238);
+    min-width: 250px;
+    min-height: 100vh;
+    background-color: rgb(0, 159, 233);
+    overflow: hidden;
 }
 
-.content{
-    flex:4;
+.SideContent{
+    width: 100%;
+    height: 100%;
+    margin:25px;
+}
+
+.SideButton{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0);
+    border:none;
+    cursor: pointer;
+}
+
+.SideButtonText{
+    font-family: "Roboto";
+    font-size: 19px;
+    font-weight: 700;
+    color:white;
+    margin-left: 8%;
+}
+
+.ButtonGroup1{
+    width: 80%;
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ButtonGroup2{
+    width: 80%;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Main{
+    flex: 4;
+    background-color: rgb(223, 226, 240);
+    display: flex;
+    flex-direction: column;
+}
+
+.TopContent{
+    width: 100%;
+    min-height: 200px;
+    min-width: 600px;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgb(198, 198, 198);
+    display: flex;
+    flex-direction: column;
+}
+
+.BottomContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.TopContentTop{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.TopContentBottom{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.SearchFormButton{
+    margin-left: 40px;
+    width: 28px;
+    height: 28px;
+    border:none;
+    background-color: rgba(0,0,0,0);
+    background-image: url("Images/searchbar.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.ProfileImage{
+    width: 50px;
+    height: 50px;
+    background-image: url("Images/zawg.jfif");
+    background-size: cover;
+    border: none;
+    border-radius: 100px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.ProfileImage2{
+    width: 85px;
+    height:85px;
+    background-image: url("Images/zawg.jfif");
+    background-size: cover;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.ProfileWelcome{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto";
+    margin-left: 21px;
+}
+
+.ProfileWelcomeFont1{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.ProfileWelcomeFont2{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.ProfileName{
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.ProfileButtonRack{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.PBRButton{
+    width: 90px;
+    height: 40px;
+    border:none;
+    background-color: rgb(0, 159, 233);
+    border-radius: 30px;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.TopContentNotification{
+    width: 28px;
+    height: 28px;
+    border:none;
+    background-color: rgba(0,0,0,0);
+    background-image: url("Images/notif.png");
+    background-size: cover;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.SearchFormText{
+    height: 30px;
+    width: 50%;
+    max-width: 650px;
+    border-radius: 20px;
+    border:none;
+    background-color: rgb(230, 231, 237);
+    padding-left: 10px;
+    font-size: 13px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.MyProjects{
+    width: 70%;
+    margin-left: 20px;
+}
+
+.ProjectsTitle{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: end;
+}
+
+.ProjectTitleText{
+    color: black;
+    font-family: "Roboto";
+    font-weight: 800;
+    font-size: 23px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.ProjectSection{
+    display: grid;
+    width: 95%;
+    height: 82%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.ProjectItem{
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-left: 4px solid rgb(240, 180, 0);
+    box-shadow: 0px 0px 10px rgb(190, 190, 190);
+}
+
+
+.ExtraContainer{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Announcements{
+    width: 90%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 600px;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Trending{
+    width: 90%;
+    height: 40%;
+    background-color: white;
+    border-radius: 10px;
+    max-height: 600px;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectTitle{
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.ProjectDesc{
+    margin-top: 5px;
+    font-family: "Roboto";
+    font-size: 13px;
+    color: rgb(102, 102, 102);
+}
+
+.ProjectButtonGroup{
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 110px;
+
+}
+
+.ProjectButton{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.Announcetent{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.AnnounceTitle{
+    font-family: "Roboto";
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.AnnounceDesc{
+    margin-top: 5px;
+    font-family: "Roboto";
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+}
+
+.ProfileText{
+    display: flex;
+    flex-direction: column;
+}
+
+.ProfileIMG{
+    flex:1;
 }
